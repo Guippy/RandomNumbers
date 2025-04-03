@@ -8,9 +8,9 @@ void stop(int);
 
 int main(void){
 int Number, Rep, ScanNumber, ScanRep;
-printf("escolha a quantidade de repeticoes\n-->");
+printf("Input the number of lines\n-->");
 ScanRep = scanf("%d", &Rep);
-printf("escolha a quantidade de numeros por repeticao\n-->");
+printf("Input the number of numbers per line"\n-->");
 ScanNumber = scanf("%d", &Number);
 if(ScanNumber == 0||ScanRep == 0||Number <= 0||Rep <= 0){
     stop(1);
@@ -44,7 +44,7 @@ for(X = 0; X < Rep; X++){
             Random = rand() % 60;
             if (Y == 0){
             MyNumbers[Y] = Random;
-            //nao testar
+            //Dnt Test
             }
             else{
             for(Z = 0; Z < Num; Z++){
@@ -54,7 +54,7 @@ for(X = 0; X < Rep; X++){
                 }
 }
             MyNumbers[Y] = Random;
-            // testar
+            // test
             }
             if(Y == (Num - 1)){
             printf("%d. ", Random);
