@@ -8,6 +8,7 @@ void stop(int);
 
 int main(void){
 int Number, Rep, ScanNumber, ScanRep;
+for(;;){
 printf("Input the number of lines\n-->");
 ScanRep = scanf("%d", &Rep);
 printf("Input the number of numbers per line\n-->");
@@ -16,6 +17,7 @@ if(ScanNumber == 0||ScanRep == 0||Number <= 0||Rep <= 0){
     stop(1);
 }
 RandomNumbers(Number, Rep);
+}
 return 0;
 }
 
@@ -70,6 +72,12 @@ for(X = 0; X < Rep; X++){
     for(Z = 0; Z < Num; Z++){
     MyNumbers[Z] = 0;
     }
+}
+int h;
+printf("\ndo you wish to clear the prompt?\nYes(1)\nNo(2)\n-->");
+scanf("%d", &h);
+if(h == 1){
+    system("cls");
 }
 }
 
