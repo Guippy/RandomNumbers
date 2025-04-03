@@ -43,7 +43,7 @@ int X, Y, Z, Random;
 printf("\n");
 for(X = 0; X < Rep; X++){
     for(Y = 0; Y < Num; Y++){
-            Random = rand() % 60;
+            Random = rand() % 60 + 1;
             if (Y == 0){
             MyNumbers[Y] = Random;
             //Dnt Test
@@ -51,7 +51,7 @@ for(X = 0; X < Rep; X++){
             else{
             for(Z = 0; Z < Num; Z++){
                 while (MyNumbers[Z] == Random){
-                    Random = rand() % 60;
+                    Random = rand() % 60 + 1;
                     Z = 0;
                 }
 }
