@@ -10,7 +10,7 @@ int main(void){
 int Number, Rep, ScanNumber, ScanRep;
 printf("Input the number of lines\n-->");
 ScanRep = scanf("%d", &Rep);
-printf("Input the number of numbers per line"\n-->");
+printf("Input the number of numbers per line\n-->");
 ScanNumber = scanf("%d", &Number);
 if(ScanNumber == 0||ScanRep == 0||Number <= 0||Rep <= 0){
     stop(1);
